@@ -1,1 +1,26 @@
-
+start
+new ABfoot number
+set ABfoot 15
+new minute number
+set minute 10
+new BCbus number
+set BCbus 15
+new CDfoot number
+set CDfoot 15
+new ADfoot number
+set ADfoot 70
+new Sum number
+set Sum ABfoot + minute + BCbus + CDfoot
+log string "Введите время в пути от A до B (пешком, в минутах):">> ABfoot
+log string "Введите время ожидания на автобус (в минутах):">> minute
+log string "Введите время в пути от В до С (на автобусе, в минутах):">> BCbus
+log string "Введите время в пути от C до D (пешком, в минутах):">> CDfoot
+log string "Введите время в пути от A до D (пешком, в минутах):">> ADfoot
+log string "Общее время в пути от A до D (пешком):">> Sum
+if (Sum > ADfoot)
+log string "Лучший путь пешком от А до D"
+else 
+if (ADfoot > Sum)
+log string "Лучший путь A->B->C->D" 
+close
+finish
