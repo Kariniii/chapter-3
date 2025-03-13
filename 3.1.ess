@@ -1,0 +1,11 @@
+start
+new age number
+set age 19
+log number age
+if (age > 18)
+    log string "он/она совершеннолетняя и может купить алкоголь"
+else
+  if (18 > age)
+  log string "он/она НЕ совершеннолетняя и НЕ может купить алкоголь"    
+close
+finish
