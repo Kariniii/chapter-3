@@ -1,0 +1,11 @@
+start
+new price number
+set price 119
+log number price
+if (price > 120)
+log string "ему/ей хватает денег, чтобы купить товар"
+else 
+if (120 > price)
+log string "ему/ей не хватает денег, чтобы купить товар"    
+close
+finish
