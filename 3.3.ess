@@ -17,10 +17,10 @@ log string "Введите время в пути от В до С (на авто
 log string "Введите время в пути от C до D (пешком, в минутах):">> CDfoot
 log string "Введите время в пути от A до D (пешком, в минутах):">> ADfoot
 log string "Общее время в пути от A до D (пешком):">> Sum
-if (Sum > ADfoot)
-log string "Лучший путь пешком от А до D"
-else 
-if (ADfoot > Sum)
-log string "Лучший путь A->B->C->D" 
-close
+     if (Sum > ADfoot)
+        log string "Лучший путь пешком от А до D"
+     else 
+     if (ADfoot > Sum)
+        log string "Лучший путь A->B->C->D" 
+     close
 finish
